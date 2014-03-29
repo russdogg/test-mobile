@@ -22,10 +22,12 @@ function gestureStart() {
 
 (function($){
   // can do something like 
-  //mailto:russ.dahlberg@lbox.com?subject=mailto%20test&body=Thanks for using the 'mail to' feature!
+   var mailLink = 'mailto:russ.dahlberg@lbox.com?subject=mailto%20test&body=Thanks for using the mail to feature! Selected city: ';
   $('a#mailLink').click(function(){
     var selectedCity = $('#tourcities').find(":selected").text();
     console.log("selectedCity: "+ selectedCity);
+    mailLink += selectedCity;
+    window.open(mailLink);
   });
   
 
