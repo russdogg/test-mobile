@@ -27,7 +27,7 @@ function gestureStart() {
     var selectedCity = $('#tourcities').find(":selected").text();
     console.log("selectedCity: "+ selectedCity);
     mailLink += selectedCity;
-    window.open(mailLink);
+    window.location.href = mailLink;
   });
   
 
