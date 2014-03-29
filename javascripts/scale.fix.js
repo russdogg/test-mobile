@@ -3,7 +3,7 @@ var i;
 if (navigator.userAgent.match(/iPhone/i)) {
   for (i=0; i<metas.length; i++) {
     if (metas[i].name == "viewport") {
-      metas[i].content = "width=device-width, minimum-scale=1.0, maximum-scale=1.0";
+      metas[i].content = "minimal-ui, width=device-width, minimum-scale=1.0, maximum-scale=1.0";
     }
   }
   document.addEventListener("gesturestart", gestureStart, false);
@@ -15,3 +15,18 @@ function gestureStart() {
     }
   }
 }
+
+
+
+
+
+(function($){
+  // can do something like 
+  //mailto:russ.dahlberg@lbox.com?subject=mailto%20test&body=Thanks for using the 'mail to' feature!
+  $('a#mailLink').click(function(){
+    var selectedCity = $('#tourcities').find(":selected").text();
+    alert("selectedCity: ", selectedCity);
+  });
+  
+
+})(jQuery);
