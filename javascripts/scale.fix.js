@@ -25,7 +25,7 @@ function gestureStart() {
   //mailto:russ.dahlberg@lbox.com?subject=mailto%20test&body=Thanks for using the 'mail to' feature!
   $('a#mailLink').click(function(){
     var selectedCity = $('#tourcities').find(":selected").text();
-    alert("selectedCity: ", selectedCity);
+    console.log("selectedCity: "+ selectedCity);
   });
   
 
