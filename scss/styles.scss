@@ -3,6 +3,10 @@ $blue: #3bbfce;
 $margin: 17px;
 $link-green: #99cc00;
 
+*{
+  -webkit-text-size-adjust: none;
+}
+
 .content-navigation {
     border-color: $blue;
     color:
