@@ -53,10 +53,13 @@
 		$("#yourimage").load(getSwatches);
 		desiredWidth = window.innerWidth;
         
+        /*
         if(!("url" in window) && ("webkitURL" in window)) {
             window.URL = window.webkitURL;
             console.log("webkit??");   
-        }
+        } */
+
+        var createObjectURL = (window.URL || window.webkitURL || {}).createObjectURL || function(){};
 		
 	});
 
