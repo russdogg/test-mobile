@@ -20,7 +20,52 @@ function gestureStart() {
 (function($){
     var userAgent = navigator.userAgent;
     var isIphone = navigator.userAgent.indexOf("iPhone") != -1 ;
-  alert("My user agent: "+ userAgent + " Is this an iphone? " + isIphone);  
+  //alert("My user agent: "+ userAgent + " Is this an iphone? " + isIphone);  
+    
+    function getOS( )
+    {
+      var ua = navigator.userAgent;
+      var uaindex;
+
+      // determine OS
+      if ( ua.match(/iPad/i) || ua.match(/iPhone/i) )
+      {
+        userOS = 'iOS';
+        uaindex = ua.indexOf( 'OS ' );
+      }
+      else if ( ua.match(/Android/i) )
+      {
+        userOS = 'Android';
+        uaindex = ua.indexOf( 'Android ' );
+      }
+      else
+      {
+        userOS = 'unknown';
+      }
+
+      // determine version
+      if ( userOS === 'iOS'  &&  uaindex > -1 )
+      {
+        userOSver = ua.substr( uaindex + 3, 3 ).replace( '_', '.' );
+      }
+      else if ( userOS === 'Android'  &&  uaindex > -1 )
+      {
+        userOSver = ua.substr( uaindex + 8, 3 );
+      }
+      else
+      {
+        userOSver = 'unknown';
+      }
+    }
+    
+    if ( userOS === 'iOS' && Number( userOSver.charAt(0) ) >= 8 ) 
+    {
+        alert('This is iOS 8!! No upload for you!');
+    }
+    else
+    {
+        alert("this is NOT ios8, phew!);
+    }
     
     
   
