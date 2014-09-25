@@ -21,7 +21,9 @@ function gestureStart() {
     var userAgent = navigator.userAgent;
     var isIphone = navigator.userAgent.indexOf("iPhone") != -1 ;
   //alert("My user agent: "+ userAgent + " Is this an iphone? " + isIphone);  
-    
+    var userOS;    // will either be iOS, Android or unknown
+    var userOSver; // this is a string, use Number(userOSver) to convert
+ 
     function getOS( )
     {
       var ua = navigator.userAgent;
@@ -57,7 +59,7 @@ function gestureStart() {
         userOSver = 'unknown';
       }
     }
-    
+     getOS();
     if ( userOS === 'iOS' && Number( userOSver.charAt(0) ) >= 8 ) 
     {
         alert('This is iOS 8!! No upload for you!');
@@ -66,7 +68,7 @@ function gestureStart() {
     {
         alert("this is NOT ios8, phew!);
     }
-    
+   
     
   
 
