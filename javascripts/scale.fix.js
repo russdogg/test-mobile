@@ -58,16 +58,18 @@ function gestureStart() {
       {
         userOSver = 'unknown';
       }
+        
+        if ( userOS === 'iOS' && Number( userOSver.charAt(0) ) >= 8 ) 
+        {
+            alert('This is iOS 8!! No upload for you!');
+        }
+        else
+        {
+            alert("this is NOT ios8, phew!");
+        }
     }
      getOS();
-    if ( userOS === 'iOS' && Number( userOSver.charAt(0) ) >= 8 ) 
-    {
-        alert('This is iOS 8!! No upload for you!');
-    }
-    else
-    {
-        alert("this is NOT ios8, phew!);
-    }
+    
    
     
   
