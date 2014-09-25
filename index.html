@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Mobile Tests by russdogg</title>
 
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/pygment_trac.css">
+    <link rel="stylesheet" href="scss/styles.css">
     <meta name="viewport" content="width=minimal-ui,device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -19,10 +18,8 @@
         <p>Trying out mobile stuff.</p>
       </header>
 
-      
       <section>
-
-        <a name="mailto-links" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a><h3>Mail To Link</h3>
+          <h3>Mail To link w/ dynamic email message</h3>
         <p>Pick your favorite city from the dropdown:</p>
         <select id="tourcities">
           <option value="stlouis">St. Louis, MO</option>
@@ -40,9 +37,18 @@
         <p>Send an email with your name, phone number and city to: </p>
         <a id="mailLink" href="javascript:void(0)"><strong>support@lbox.com</strong></a>
         <br/>
-        <br/>
+
 
       </section>
+        <section>
+            <h3>Mobile browser OS and version detecting</h3>
+            <h4>Mobile OS</h4>
+            <span id="span-mobileos">detecting...</span>
+            
+            <h4>Version</h4>
+            <span id="span-mobileversion">detecting...</span>
+        </section>
+        
 
 
 

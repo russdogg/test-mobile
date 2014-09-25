@@ -44,6 +44,8 @@ function gestureStart() {
       {
         userOS = 'unknown';
       }
+        
+        
 
       // determine version
       if ( userOS === 'iOS'  &&  uaindex > -1 )
@@ -59,16 +61,11 @@ function gestureStart() {
         userOSver = 'unknown';
       }
         
-        if ( userOS === 'iOS' && Number( userOSver.charAt(0) ) >= 8 ) 
-        {
-            alert('This is iOS 8!! No upload for you!');
-        }
-        else
-        {
-            alert("this is NOT ios8, phew!");
-        }
     }
      getOS();
+    
+    document.getElementById('span-mobileos').innerHTML = userOS;
+    document.getElementById('span-mobileversion').innerHTML = userOSver;
     
    
     

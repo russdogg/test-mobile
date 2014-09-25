@@ -43,11 +43,15 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size:28px;
+  font-size:30px;
 }
 
 h2 {
   color:#393939;
+}
+
+h3 {
+    font-size: 21px;
 }
 
 h3, h4, h5, h6 {
@@ -191,8 +195,7 @@ section {
   width:500px;
   float:right;
   padding:20px 0;
-  border:1px solid #e5e5e5;
-  border-width: 1px 0;
+  border-top:1px solid #e5e5e5;
 }
 
 small {
@@ -205,6 +208,22 @@ hr {
   height:1px;
   margin:0 0 20px;
 }
+
+
+span#span-mobileos {
+    width: 80%;
+    background: #ddd;
+    border:1px solid #888;
+    padding:5px;
+}
+
+span#span-mobileversion {
+    width: 80%;
+    background: #ddd;
+    border:1px solid #888;
+    padding:5px;
+}
+
 
 footer {
   width:270px;
@@ -236,14 +255,14 @@ footer {
     ul {
       position:absolute; 
       right:50px;
-      top:53px;
+      top:5px;
     }
 
   }
   
   section {
-    border:1px solid #e5e5e5;
-    border-width:1px 0;
+    border-top:1px solid #999999;
+   /* border-width:1px 0;*/
     padding:20px 0;
     margin:0 0 20px;
   }
