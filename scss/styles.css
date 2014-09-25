@@ -208,4 +208,12 @@ footer {
   header ul {
     display: none; } }
 
+.detection-box {
+  float: left; 
+    margin:0 11px;
+}
+
+.clear {
+  clear: both; }
+
 /*# sourceMappingURL=styles.css.map */
