@@ -64,8 +64,8 @@ function gestureStart() {
     }
      getOS();
     
-    document.getElementById('span-mobileos').innerHTML = userOS;
-    document.getElementById('span-mobileversion').innerHTML = userOSver;
+    document.getElementById('mobileos').innerHTML = userOS;
+    document.getElementById('mobilevers').innerHTML = userOSver;
     
    
     

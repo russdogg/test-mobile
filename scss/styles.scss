@@ -31,7 +31,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   color:#222;
-  margin:0 0 20px;
+  margin:0 0 10px;
 }
 
 p, ul, ol, table, pre, dl {
@@ -210,18 +210,12 @@ hr {
 }
 
 
-span#span-mobileos {
+.results-box {
     width: 80%;
     background: #ddd;
-    border:1px solid #888;
+    border:1px dashed #888;
     padding:5px;
-}
-
-span#span-mobileversion {
-    width: 80%;
-    background: #ddd;
-    border:1px solid #888;
-    padding:5px;
+    text-align: center;
 }
 
 
@@ -273,7 +267,7 @@ footer {
   body {
     word-wrap:break-word;
   }
-  
+
   header {
     padding:0;
   }
@@ -300,8 +294,21 @@ footer {
 
 .detection-box {
     float: left;
+    width:25%;
+    margin-top:10px;
+    h4 {
+        text-align: center;
+    }
+    
 }
 
 .clear {
     clear:both;
+}
+
+span {
+    width: 100%;
+}
+.results-box {
+    
 }
