@@ -3,11 +3,9 @@
 	<head>
 	<meta name="viewport" content="width=320, user-scalable=no" />
 	<meta http-equiv="Content-type" content="text/html charset=utf-8">
-	<title>ColorThief Demo</title>
+	<title>Sample Image Swatch Test</title>
 	
-	<script type="text/javascript" charset="utf-8" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-	<script type="text/javascript" charset="utf-8" src="javascripts/quantize.js"></script>
-	<script type="text/javascript" charset="utf-8" src="javascripts/color-thief.js"></script>
+	
         
 	<style>
 	#yourimage {
@@ -43,7 +41,10 @@
 			<div id="swatch3" class="swatch"></div>
 			<div id="swatch4" class="swatch"></div>
 		</div>
-		
+	<script type="text/javascript" charset="utf-8" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" charset="utf-8" src="javascripts/quantize.js"></script>
+	<script type="text/javascript" charset="utf-8" src="javascripts/color-thief.js"></script>
+        
     <script>
 	var desiredWidth;
 	var urlCreator;
@@ -62,6 +63,7 @@
 
         // var createObjectURL = (window.URL || window.webkitURL || {}).createObjectURL || function(){};
         urlCreator = window.URL || window.webkitURL;
+        console.log('urlCreator: ', urlCreator);
 		
 	});
 

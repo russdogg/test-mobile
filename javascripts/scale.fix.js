@@ -17,11 +17,18 @@ function gestureStart() {
 }
 
 
-
-
-
 (function($){
+    var userAgent = navigator.userAgent;
+    var isIphone = navigator.userAgent.indexOf("iPhone") != -1 ;
+  alert("My user agent: "+ userAgent + " Is this an iphone? " + isIphone);  
+    
+    
+  
 
+    
+    
+    
+    
     var mailLink = 'mailto:russ.dahlberg@lbox.com?subject=Brad%20Paisley%20Cheeseburger%20Contest%20Entry&body=Selected concert city: ';
   
 
